@@ -1,0 +1,132 @@
+body,html{
+   margin:0;
+   padding:0;
+   overflow-x:hidden !important;
+   overflow-y:hidden !important;
+}
+
+#wrapper{
+   width:100%;
+   height:100vh;
+}
+
+
+#chart{
+   width:100%;
+   height:100vh;
+}
+
+
+
+.title{
+ padding-left:2px;
+ padding-right:2px;
+ padding-top:5px;
+ padding-bottom:5px;
+ text-align:center;
+ font-weight:bolder;  
+ border:1px solid;
+ display:inline-block;
+ float:left;
+ font-size:1.2vw;
+}
+
+
+
+
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  z-index:1000000;
+  background-color: rgba(0,0,0,1) !important; 
+  opacity:1;
+  border:2px solid #66CDAA; 
+  border-radius: 4px; 
+  -moz-border-radius: 4px; 
+  -webkit-border-radius: 4px;
+  -moz-box-shadow:0 0 10px rgba(0, 0, 0, .5);
+  -webkit-box-shadow:0 0 10px rgba(0, 0, 0, .5);
+  box-shadow:0 0 10px rgba(0, 0, 0, .5);
+  color: #fff;
+  border-radius: 2px;
+  height:100px;
+  overflow-y:auto;
+}
+
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: #fff;
+  position: absolute;
+}
+
+  /* Nrthward tooltips */
+.d3-tip.n:after {
+  content: "\25BC";
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+  color: rgba(0,0,0,1) !important; 
+  text-align: center;
+}
+
+  /* Eastward tooltips */
+.d3-tip.e:after {
+  content: "\25C0";
+  margin: -4px 0 0 0;
+  top: 50%;
+  color: rgba(0,0,0,1) !important; 
+  left: -8px;
+}
+
+  /* Southward tooltips */
+.d3-tip.s:after {
+  content: "\25B2";
+  margin: 0 0 1px 0;
+  top: -8px;
+  left: 0;
+  color: rgba(0,0,0,1) !important; 
+  text-align: center;
+}
+
+  /* Westward tooltips */
+.d3-tip.w:after {
+  content: "\25B6";
+  margin: -4px 0 0 -1px;
+  top: 50%;
+  color: rgba(0,0,0,1) !important; 
+  left: 100%;
+}
+
+#gridX line{
+   vector-effect: non-scaling-stroke;
+}
+
+#gridY line{
+   vector-effect: non-scaling-stroke;
+}
+
+
+
+
+.grid{
+   stroke:grey;
+   stroke-opacity:.2;
+}
+
+#charttitle{
+  text-align:center;
+  font-weight:bolder;
+  margin-top:15px;
+  position:relative;
+}
+
+
+.sidebar > .row > .col-xs-12, .sidebar > .row > .col-sm-12, .sidebar > .row > .col-md-12, .sidebar > .row > .col-lg-12
+{
+ overflow:hidden !important;
+}
